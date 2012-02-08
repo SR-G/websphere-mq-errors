@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes"/>
+  <classpathentry kind="src" path="src/main/java"/>
+  <classpathentry kind="src" path="src/main/run"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.8.2/junit-4.8.2.jar" sourcepath="M2_REPO/junit/junit/4.8.2/junit-4.8.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.6.1/jsoup-1.6.1.jar" sourcepath="M2_REPO/org/jsoup/jsoup/1.6.1/jsoup-1.6.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar" sourcepath="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.5.11/jcl-over-slf4j-1.5.11.jar" sourcepath="M2_REPO/org/slf4j/jcl-over-slf4j/1.5.11/jcl-over-slf4j-1.5.11-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.0.1/commons-lang3-3.0.1.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.0.1/commons-lang3-3.0.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1.jar" sourcepath="M2_REPO/commons-io/commons-io/2.1/commons-io-2.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/2.5.6.SEC01/spring-core-2.5.6.SEC01.jar" sourcepath="M2_REPO/org/springframework/spring-core/2.5.6.SEC01/spring-core-2.5.6.SEC01-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/ibm/mq/headers/7.0.1/headers-7.0.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/ibm/mq/jmqi/7.0.1/jmqi-7.0.1.jar"/>
+</classpath>
