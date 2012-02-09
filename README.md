@@ -7,11 +7,13 @@ Usefull when working with the WMQ Java API.<br />
 Error codes are dumped in a [.csv file](https://github.com/SR-G/websphere-mq-errors/blob/master/src/main/java/org/tensin/wmq/common/wmq_error_codes.csv) (with the various needed columns). This file is read by the WMQEnhancedException (only once) when needed, right from the classpath. <br />
 <br />
 You just have to catch the MQException or MQDataException like this : <br />
+
     try {
       ...
     } catch (MQException e) {
       throw new WMQEnhancedException(e);
     }
+
 <br />
 In order to compile this project, you of course need the MQ libraries (for example provided with Websphere Message Explorer, on Linux, available under /opt/mqm/java/lib/). <br />
 <br />
