@@ -1,30 +1,27 @@
 # WMQEnhancedException
 <br />
-WMQEnhancedException.java : allows to dump the explicit message corresponding to a WMQ error code.<br />
+**WMQEnhancedException.java** : allows to dump the explicit message corresponding to a WMQ error code each time a [MQException](http://publib.boulder.ibm.com/infocenter/wmqv7/v7r0/index.jsp?topic=%2Fcom.ibm.mq.javadoc.doc%2FWMQJMSClasses%2Fcom%2Fibm%2Fmq%2FMQException.html) is thrown.<br />
 <br />
 Usefull when working with the WMQ Java API.<br />
 <br />
-Error codes are dumped in a .csv file (with the various needed columns). This file is read by the WMQEnhancedException (only once) when needed, right from the classpath. <br />
+Error codes are dumped in a [.csv file](https://github.com/SR-G/websphere-mq-errors/blob/master/src/main/java/org/tensin/wmq/common/wmq_error_codes.csv) (with the various needed columns). This file is read by the WMQEnhancedException (only once) when needed, right from the classpath. <br />
 <br />
 You just have to catch the MQException or MQDataException like this : <br />
-
     try {
       ...
     } catch (MQException e) {
       throw new WMQEnhancedException(e);
     }
-
-<br />
 <br />
 In order to compile this project, you of course need the MQ libraries (for example provided with Websphere Message Explorer, on Linux, available under /opt/mqm/java/lib/). <br />
 <br />
 Please adapt the provided pom.xml if needed, by setting the scope to "provided" with the absolute path to be specified as "systemPath" (although these classes are rather intended to be incorporated in the project that works with the WMQ Java API). 
 <br />
-The content of the .csv files with every code is built as needed, by downloading the .html from the Websphere online documentation from IBM, parsing the result with the Jsoup library. A WMQErrorCodeDocumentation.java class is provided for this purpose (it contains a main that can be launched to rebuild the .csv content).<br />
+The content of the .csv files with every code is built as needed, by downloading the .html from the Websphere online documentation from IBM, parsing the result with the [Jsoup](http://jsoup.org/) library. A **WMQErrorCodeDocumentation.java** class is provided for this purpose (it contains a main that can be launched to rebuild the .csv content).<br />
 <br />
 ## Exceptions list.
 
-List build from Websphere documentation released on 9 december 2011.
+List build from Websphere documentation released on 9 december 2011. The [.csv](https://github.com/SR-G/websphere-mq-errors/blob/master/src/main/java/org/tensin/wmq/common/wmq_error_codes.csv) contains full description.
 
 	 0 | MQRC_NONE
 	 900 | MQRC_APPL_FIRST
